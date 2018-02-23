@@ -1,0 +1,40 @@
+{
+  "name": "mcctrl",
+  "version": "1.0.0",
+  "description": "A man cave control application",
+  "productName": "McCtrl",
+  "cordovaId": "org.cordova.quasar.app",
+  "author": "LokiFaun <johannes.schuetz@outlook.com>",
+  "private": true,
+  "scripts": {
+    "lint": "eslint --ext .js,.vue src",
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "dependencies": {
+    "axios": "^0.17.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "8.2.1",
+    "devtron": "1.4.0",
+    "electron": "1.7.9",
+    "electron-debug": "1.4.0",
+    "electron-devtools-installer": "2.2.1",
+    "electron-packager": "9.1.0",
+    "eslint": "4.15.0",
+    "eslint-config-airbnb-base": "11.3.0",
+    "eslint-friendly-formatter": "3.0.0",
+    "eslint-loader": "1.7.1",
+    "eslint-plugin-import": "2.7.0",
+    "eslint-plugin-vue": "4.0.0",
+    "quasar-cli": "^0.15.1"
+  },
+  "engines": {
+    "node": ">= 8.9.0",
+    "npm": ">= 5.6.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 10"
+  ]
+}
