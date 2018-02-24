@@ -5,16 +5,17 @@
         <q-btn
           flat
           dense
-          round
           @click="leftDrawerOpen = !leftDrawerOpen"
         >
           <q-icon name="menu" />
         </q-btn>
-
         <q-toolbar-title>
           McCtrl
           <div slot="subtitle">Controls Hue lamps, displays sensor data, system information</div>
         </q-toolbar-title>
+        <q-btn flat dense @click="$router.push('/')">
+          <q-icon name="home" />
+        </q-btn>
       </q-toolbar>
     </q-layout-header>
 
@@ -28,6 +29,10 @@
         inset-delimiter
       >
         <q-list-header>Main Menu</q-list-header>
+        <q-item @click.native="$router.push('/')">
+          <q-item-side icon="home" />
+          <q-item-main label="Home" sublabel="Dashboard" />
+        </q-item>
         <q-item @click.native="$router.push('/hue/control')">
           <q-item-side icon="highlight" />
           <q-item-main label="Hue" sublabel="Control Hue lamps" />
@@ -39,6 +44,10 @@
         <q-item @click.native="$router.push('/system/information')">
           <q-item-side icon="perm_device_information" />
           <q-item-main label="System" sublabel="Display system information" />
+        </q-item>
+        <q-item @click.native="$router.push('/')">
+          <q-item-side icon="close" />
+          <q-item-main label="Close" sublabel="Close the application" />
         </q-item>
       </q-list>
     </q-layout-drawer>

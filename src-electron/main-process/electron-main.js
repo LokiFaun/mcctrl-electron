@@ -17,7 +17,9 @@ function createWindow() {
   mainWindow = new BrowserWindow({
     width: 800,
     height: 480,
-    useContentSize: true
+    useContentSize: true,
+    // fullscreen: true,
+    // frame: false,
   })
 
   mainWindow.loadURL(process.env.APP_URL)
