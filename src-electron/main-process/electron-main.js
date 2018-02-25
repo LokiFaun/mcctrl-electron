@@ -20,8 +20,8 @@ function createWindow() {
     width: 800,
     height: 480,
     useContentSize: true,
-    // fullscreen: true,
-    // frame: false,
+    fullscreen: process.env.PROD,
+    frame: !process.env.PROD,
   });
 
   mainWindow.loadURL(process.env.APP_URL);
