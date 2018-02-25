@@ -16,14 +16,14 @@
   "devDependencies": {
     "babel-eslint": "8.2.1",
     "devtron": "1.4.0",
-    "electron": "1.7.9",
+    "electron": "1.8.2",
     "electron-debug": "1.4.0",
     "electron-devtools-installer": "2.2.1",
     "electron-packager": "9.1.0",
     "eslint": "4.15.0",
     "eslint-config-airbnb-base": "11.3.0",
     "eslint-friendly-formatter": "3.0.0",
-    "eslint-loader": "1.7.1",
+    "eslint-loader": "1.9.0",
     "eslint-plugin-import": "2.7.0",
     "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-vue": "4.0.0",
@@ -34,9 +34,5 @@
     "node": ">= 8.9.0",
     "npm": ">= 5.6.0"
   },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 10"
-  ]
+  "browserslist": ["> 1%", "last 2 versions", "not ie <= 10"]
 }

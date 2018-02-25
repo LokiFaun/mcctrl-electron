@@ -58,9 +58,9 @@
     lodash "^4.2.0"
     to-fast-properties "^2.0.0"
 
-"@types/node@^7.0.18":
-  version "7.0.55"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-7.0.55.tgz#7bb6215ff9425a1d714106be9f0d3e0e28829288"
+"@types/node@^8.0.24":
+  version "8.9.4"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.9.4.tgz#dfd327582a06c114eb6e0441fa3d6fab35edad48"
 
 abbrev@1:
   version "1.1.1"
@@ -2321,11 +2321,11 @@ electron-to-chromium@^1.2.7, electron-to-chromium@^1.3.30:
   version "1.3.34"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.34.tgz#d93498f40391bb0c16a603d8241b9951404157ed"
 
-electron@1.7.9:
-  version "1.7.9"
-  resolved "https://registry.yarnpkg.com/electron/-/electron-1.7.9.tgz#add54e9f8f83ed02f6519ec10135f698b19336cf"
+electron@1.8.2:
+  version "1.8.2"
+  resolved "https://registry.yarnpkg.com/electron/-/electron-1.8.2.tgz#a817cd733c2972b3c7cc4f777caf6e424b88014d"
   dependencies:
-    "@types/node" "^7.0.18"
+    "@types/node" "^8.0.24"
     electron-download "^3.0.1"
     extract-zip "^1.0.3"
 
@@ -2510,11 +2510,10 @@ eslint-import-resolver-node@^0.3.1:
     debug "^2.6.9"
     resolve "^1.5.0"
 
-eslint-loader@1.7.1:
-  version "1.7.1"
-  resolved "https://registry.yarnpkg.com/eslint-loader/-/eslint-loader-1.7.1.tgz#50b158dd6272dcefb97e984254837f81a5802ce0"
+eslint-loader@1.9.0:
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/eslint-loader/-/eslint-loader-1.9.0.tgz#7e1be9feddca328d3dcfaef1ad49d5beffe83a13"
   dependencies:
-    find-cache-dir "^0.1.1"
     loader-fs-cache "^1.0.0"
     loader-utils "^1.0.2"
     object-assign "^4.0.1"
