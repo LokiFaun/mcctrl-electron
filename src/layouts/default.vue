@@ -13,6 +13,7 @@
           McCtrl
           <div slot="subtitle">Controls Hue lamps, displays sensor data, system information</div>
         </q-toolbar-title>
+        <div>{{now.toLocaleString("de-DE")}}</div>
         <q-btn flat dense @click="$router.push('/')">
           <q-icon name="home" />
         </q-btn>
@@ -21,12 +22,13 @@
 
     <q-layout-drawer
       v-model="leftDrawerOpen"
-      content-class="bg-grey-2"
+      content-class="bg-dark"
     >
       <q-list
         no-border
         link
         inset-delimiter
+        dark
       >
         <q-list-header>Main Menu</q-list-header>
         <q-item @click.native="$router.push('/')">
@@ -41,11 +43,16 @@
           <q-item-side icon="device_hub" />
           <q-item-main label="Sensors" sublabel="Display sensor data" />
         </q-item>
+        <q-item @click.native="$router.push('/weather/forecast')">
+          <q-item-side icon="cloud" />
+          <q-item-main label="Weather" sublabel="Display weather forecast" />
+        </q-item>
         <q-item @click.native="$router.push('/system/information')">
           <q-item-side icon="perm_device_information" />
           <q-item-main label="System" sublabel="Display system information" />
         </q-item>
-        <q-item @click.native="$router.push('/')">
+        <q-item-separator />
+        <q-item class="fixed-bottom" @click.native="close()">
           <q-item-side icon="close" />
           <q-item-main label="Close" sublabel="Close the application" />
         </q-item>
@@ -60,16 +67,21 @@
 
 <script>
 import { openURL } from 'quasar';
+import { ipcRenderer } from 'electron';
 
 export default {
   name: 'LayoutDefault',
   data() {
     return {
       leftDrawerOpen: false,
+      now: new Date(),
     };
   },
   methods: {
     openURL,
+    close() {
+      ipcRenderer.send('app-cmd', 'close');
+    },
   },
 };
 </script>

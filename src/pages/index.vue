@@ -1,6 +1,6 @@
 <template>
-  <q-page class="flex flex-center">
-    <q-card style='width: 80%'>
+  <q-page class="row gutter-md">
+    <q-card class="col-xs-6 col-sm-6 TOP LEFT">
       <q-card-title>
         Hue
         <div slot="right" class="row items-center">
@@ -19,7 +19,7 @@
         </q-btn>
       </q-card-actions>
     </q-card>
-    <q-card style='width: 80%'>
+    <q-card class="col-xs-6 col-sm-6 TOP RIGHT">
       <q-card-title>
         Sensors
         <div slot="right" class="row items-center">
@@ -32,7 +32,20 @@
       </q-card-main>
       <q-card-separator />
     </q-card>
-    <q-card style='width: 80%'>
+    <q-card class="col-xs-6 col-sm-6 BOTTOM RIGHT">
+      <q-card-title>
+        Weather
+        <div slot="right" class="row items-center">
+          <q-icon name="cloud" />
+        </div>
+      </q-card-title>
+      <q-card-separator />
+      <q-card-main>
+        Display weather forecast information
+      </q-card-main>
+      <q-card-separator />
+    </q-card>
+    <q-card class="col-xs-6 col-sm-6 BOTTOM LEFT">
       <q-card-title>
         System
         <div slot="right" class="row items-center">

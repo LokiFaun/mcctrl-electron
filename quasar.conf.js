@@ -1,24 +1,20 @@
 // Configuration for your app
 
-module.exports = function (ctx) {
+module.exports = function(ctx) {
   return {
-    plugins: [
-      'axios'
-    ],
-    css: [
-      'app.styl'
-    ],
+    plugins: ['axios'],
+    css: ['app.styl'],
     extras: [
       ctx.theme.mat ? 'roboto-font' : null,
       'material-icons',
       // 'ionicons',
       // 'mdi',
-      'fontawesome'
+      'fontawesome',
     ],
     supportIE: false,
     vendor: {
       add: [],
-      remove: []
+      remove: [],
     },
     build: {
       scopeHoisting: true,
@@ -32,14 +28,14 @@ module.exports = function (ctx) {
           enforce: 'pre',
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
-          exclude: /(node_modules|quasar)/
-        })
-      }
+          exclude: /(node_modules|quasar)/,
+        });
+      },
     },
     devServer: {
       // https: true,
       // port: 8080,
-      open: true // opens browser window automatically
+      open: true, // opens browser window automatically
     },
     // framework: 'all' --- includes everything; for dev only!
     framework: {
@@ -59,25 +55,22 @@ module.exports = function (ctx) {
         'QItem',
         'QItemMain',
         'QItemSide',
+        'QItemSeparator',
         'QCard',
         'QCardTitle',
         'QCardMain',
         'QCardMedia',
         'QCardSeparator',
-        'QCardActions'
+        'QCardActions',
       ],
-      directives: [
-        'Ripple'
-      ],
-      plugins: [
-        'Notify'
-      ]
+      directives: ['Ripple'],
+      plugins: ['Notify'],
     },
     // animations: 'all' --- includes all animations
-    animations: [
-    ],
+    animations: [],
     pwa: {
-      cacheExt: 'js,html,css,ttf,eot,otf,woff,woff2,json,svg,gif,jpg,jpeg,png,wav,ogg,webm,flac,aac,mp4,mp3',
+      cacheExt:
+        'js,html,css,ttf,eot,otf,woff,woff2,json,svg,gif,jpg,jpeg,png,wav,ogg,webm,flac,aac,mp4,mp3',
       manifest: {
         // name: 'Quasar App',
         // short_name: 'Quasar-PWA',
@@ -88,38 +81,38 @@ module.exports = function (ctx) {
         theme_color: '#027be3',
         icons: [
           {
-            'src': 'statics/icons/icon-128x128.png',
-            'sizes': '128x128',
-            'type': 'image/png'
+            src: 'statics/icons/icon-128x128.png',
+            sizes: '128x128',
+            type: 'image/png',
           },
           {
-            'src': 'statics/icons/icon-192x192.png',
-            'sizes': '192x192',
-            'type': 'image/png'
+            src: 'statics/icons/icon-192x192.png',
+            sizes: '192x192',
+            type: 'image/png',
           },
           {
-            'src': 'statics/icons/icon-256x256.png',
-            'sizes': '256x256',
-            'type': 'image/png'
+            src: 'statics/icons/icon-256x256.png',
+            sizes: '256x256',
+            type: 'image/png',
           },
           {
-            'src': 'statics/icons/icon-384x384.png',
-            'sizes': '384x384',
-            'type': 'image/png'
+            src: 'statics/icons/icon-384x384.png',
+            sizes: '384x384',
+            type: 'image/png',
           },
           {
-            'src': 'statics/icons/icon-512x512.png',
-            'sizes': '512x512',
-            'type': 'image/png'
-          }
-        ]
-      }
+            src: 'statics/icons/icon-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+          },
+        ],
+      },
     },
     cordova: {
       // id: 'org.cordova.quasar.app'
     },
     electron: {
-      extendWebpack(cfg) {
+      extendWebpack(/* cfg */) {
         // do something with cfg
       },
       packager: {
@@ -128,13 +121,12 @@ module.exports = function (ctx) {
         // appCategoryType: '',
         // osxSign: '',
         // protocol: 'myapp://path',
-
         // Window only
         // win32metadata: { ... }
-      }
+      },
     },
 
     // leave this here for Quasar CLI
-    starterKit: '1.0.0-beta.4'
-  }
-}
+    starterKit: '1.0.0-beta.4',
+  };
+};

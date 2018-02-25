@@ -1,13 +1,13 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 
-import example from './module-example';
+// import time from './time';
 
 Vue.use(Vuex);
 
 const store = new Vuex.Store({
   modules: {
-    example,
+    // time,
   },
 });
 

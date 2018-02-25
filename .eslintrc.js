@@ -2,26 +2,23 @@ module.exports = {
   root: true,
   parserOptions: {
     parser: 'babel-eslint',
-    sourceType: 'module'
+    sourceType: 'module',
   },
   env: {
-    browser: true
+    browser: true,
   },
   // https://github.com/vuejs/eslint-plugin-vue#priority-a-essential-error-prevention
   // consider switching to `plugin:vue/strongly-recommended` or `plugin:vue/recommended` for stricter rules.
   extends: ['plugin:vue/essential', 'airbnb-base'],
   // required to lint *.vue files
-  plugins: [
-    'vue',
-    'prettier'
-  ],
+  plugins: ['vue', 'prettier'],
   globals: {
-    'ga': true, // Google Analytics
-    'cordova': true,
-    '__statics': true
+    ga: true, // Google Analytics
+    cordova: true,
+    __statics: true,
   },
   // add your custom rules here
-  'rules': {
+  rules: {
     'no-param-reassign': 0,
 
     'import/first': 0,
@@ -37,6 +34,6 @@ module.exports = {
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
 
     // integrate prettier
-    'prettier/prettier': 'error'
-  }
-}
+    'prettier/prettier': 'error',
+  },
+};
