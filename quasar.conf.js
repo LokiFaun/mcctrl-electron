@@ -1,6 +1,6 @@
 // Configuration for your app
 
-module.exports = function(ctx) {
+module.exports = function configure(ctx) {
   return {
     plugins: ['axios'],
     css: ['app.styl'],

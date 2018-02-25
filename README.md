@@ -21,7 +21,7 @@ $ yarn global add vue-cli
 $ yarn global add quasar-cli
 ```
 
-Install dependncies and start dev process using npm:
+Install dependencies and start dev process using npm:
 
 ```bash
 $ npm install
